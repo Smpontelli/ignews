@@ -13,10 +13,7 @@ import styles from './styles.module.scss'
 //os 2 gets serao utilizados enquanto a página é renderizada
 //o API route é utilizado a partir de interações do usuario
 
-interface SubscribeButtonProps {
-    priceId: string;
-}
-export function SubscribeButton({priceId}: SubscribeButtonProps) {
+export function SubscribeButton() {
     const [session] = useSession()
     const router = useRouter()
 
